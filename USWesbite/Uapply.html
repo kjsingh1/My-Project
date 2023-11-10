@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main {
+            height: 200px;
+            background-color: red;
+        }
+        .mainh2 {
+            text-align: center;
+            color: lightblue;
+            font-size: 30px;
+        }
+        .about {
+            color: lightblue;
+            text-align: center;
+        }
+        .main2 {
+            width: 300px;
+            height: 200px;
+            background: lightblue;
+            border-radius: 100px 100px 10px 10px;
+            padding: 10px;
+            margin-left: 300px;
+
+        }
+        .h2main2 {
+            text-align: center;
+            color: red;
+        }
+        .main3 {
+            width: 300px;
+            height: 200px;
+            background-color: red;
+            border-radius: 10px 10px 100px 100px;
+            margin-left: 400px;
+            padding: 30px;
+        }
+        .main3h3 {
+            text-align: center;
+            color: lightblue;
+        }
+        .main4 {
+            height: 300px;
+            background-color: burlywood;
+            margin-top: 150px;
+            width: 500px;
+            margin-left: -200px;
+            align-items: center;
+            justify-content: center;
+        }
+        .main4h4 {
+            margin-left: 5px;
+            font-size: 30px;
+        }
+        .pmain2 {
+            color: red;
+        }
+        @media screen and (max-width: 600px) {
+            .main2 {
+                width: 200px;
+                margin-left: 10px;
+            }
+            .main3 {
+                width: 200px;
+                margin-left: 90px;
+            }
+         
+        }
+        @media screen and (min-width: 1180px) {
+            .main2 {
+                width: 300px;
+                margin-left: 450px;
+            }
+            .main3 {
+                width: 300px;
+                margin-left: 550px;
+            }
+            .main4 {
+                margin-left: -578.5px;
+                margin-top: 162.8px;
+                border-radius: 0px 0px 10px 50px;
+            }
+        }    </style>
+    <section class="main">
+        <h2 class="mainh2">A little about us</h2>
+        <p class="about">We were established in 2024 and  the founders of this company are Karamjot Singh and Rajni Sohal </p>
+    </section>
+    <section class="main2">
+        <h2 class="h2main2">Karamjot</h2>
+        <p class="pmain2">Hello I am Karamjot Singh and I am 14 years old. My dream was to open a business for affordable website development. <a href = "https://www.nextstoprepublic.com">Here</a> are some examples of my creations</p>
+    </section>
+    <section class="main3">
+        <h2 class="main3h3">Rajni</h2>
+        <img src="RAJNI_PHOTO" alt="" class="img2">
+    </secction>
+    <section class="main4">
+        <h2 class="main4h4">Why We Started USWebsites</h2>
+        <p class="main4p4"><blockquote> Started USWebsites because we have been making websites and we thought to start a business</blockquote></p>
+    </section>
+    <div class="intro">
+        <div class="intro-text">
+          <h1 class="hide">
+            <span class="text">About Us </span>
+          </h1>
+          <h1 class="hide">
+            <span class="text">Page</span>
+          </h1>
+          <h1 class="hide">
+            <span class="text"></span>
+          </h1>
+        </div>
+      </div>
+      <div class="slider"></div>
+      <script src="./app.js"></script>
+    </body>
+</html>

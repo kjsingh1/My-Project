@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" type = "text/css" href ="styles.css">
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/64e0de5994cf5d49dc6b592d/1h87693ii';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</head>
+<body>
+    <style>
+        body {
+           height: 500px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .main {
+    background-color: lightblue;
+    background-size: cover;
+    background-position: center;
+    position: absolute; /* Set the .main section to absolute positioning */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: -1; /* Set the z-index to a lower value to place it behind everything */
+    text-align: center;
+    color: white;
+    border-radius: 0px 0px 300px 300px;
+
+}      
+nav {
+      background-color: lightblue;
+      color: lightblue;
+      padding: 10px;
+      height: 100px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 15px;
+      width: 450px;
+      box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: red;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+        .one {
+            height:750px;
+            width: 300px;
+            padding: 30px;
+            background-color: red;
+            border-radius: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 80px;
+            transition: transform 0.3s ease;
+            box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+        }
+                    .one:hover {
+            transform: scale(1.1);
+        }
+        .oneh {
+            text-align: center;
+            color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+        .onep {
+            text-align: center;
+            color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        .greencheck {
+            color: green;
+            font-size: 24px;
+        }
+        .check {
+            color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .button1 {
+            color: red;
+      font-size: 25px;
+      font-weight: 300;
+      text-decoration: none;
+      padding: 15px 30px;
+      border: 2px solid red;
+      background-color: lightblue;
+      border-radius: 50px;
+      margin-bottom: 90px;
+      font-family: Arial, Helvetica, sans-serif;
+        }
+        .slash-over {
+            position: relative;
+            display: inline-block;
+            text-decoration: line-through;
+
+        }
+
+        .slash-over::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 58px;
+            transform: translateY(-50%);
+            color: red; /* You can change the color to your preference */
+            font-size: 80px; /* You can adjust the font size as needed */
+        }
+        .onex {
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: red;
+        }
+        .container {
+            display: flex;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        
+.b {
+    background-color: red;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: -60px;
+    color: lightblue;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+
+}
+.check1 {
+    color: red;
+    text-align: center; /* This will center the text inside the .check1 div */
+}
+
+.check-container {
+    display: flex;
+    gap: 90px;
+    justify-content: center; /* This will center the .check1 div inside the .check-container */
+}
+.main2 {
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+    position: absolute; /* Set the .main section to absolute positioning */
+    top: 750px;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    z-index: -1; /* Set the z-index to a lower value to place it behind everything */
+    text-align: center;
+    color: white;
+    border-radius: 300px 300px 0px 0px;
+}
+@media screen and (max-width: 600px) {
+  .main {
+    height: 1500px;
+  }
+  .main2 {
+    height: 1200px;
+  margin-top: 1000px;
+  }
+  nav {
+    width: 100%;
+    margin-left: -30px;
+  }
+
+  /* Set the logo size to 80px by 80px */
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin: 1px auto; /* Center the logo vertically and horizontally */
+  }
+      .slideshow-container {
+        width: 100%;
+        height: 300px; /* Adjust the height as needed for the phone screen */
+      }
+
+      .slide {
+        left: 0; /* Ensure slides are shown properly on phones */
+      }
+
+      .img-one {
+        width: 100%;
+        height: auto; /* Adjust the image size for phones */
+      }
+
+      .title-head,
+      .title-head1,
+      .head2,
+      .intro-text {
+        font-size: 30px; /* Adjust the font sizes for better readability on phones */
+      }
+      .check-container {
+        display: block;
+        gap: 40px;
+      }
+
+     
+
+
+      .button-1,
+      .button-2,
+      .get-start {
+        font-size: 18px; /* Adjust the button font size for phones */
+        padding: 10px 20px; /* Adjust the button padding for phones */
+      }
+      .intro-text {
+        font-size: 16px; /* Adjust the intro-text font size for phones */
+        padding: 10px; /* Adjust the intro-text padding for phones */
+        text-align: center; /* Center the text horizontally */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        justify-content: center;
+        align-items: center; /* Center the text vertically */
+        overflow: auto; /* Add scrollbars when content exceeds the available space */
+        max-height: 100%; /* Ensure .intro-text does not exceed the .intro height */
+        margin-left: 39px;
+      }
+      .intro {
+        height: 100%; /* Adjust the height of .intro for smaller phones */
+        width: 100%;
+        position: fixed;
+
+      }
+      .intro-text-wrapper {
+        overflow: auto; /* Add scrollbars when content exceeds the available space */
+        height: 100%; /* Ensure the wrapper takes the full height of .intro */
+      }
+    }
+        @media screen and (max-width: 1180px) {
+            .container {
+                display: block;
+            }
+        }
+        @media screen and (max-width: 1224px){
+            
+
+      .title-head {
+        margin-top: -30px;
+      }
+
+      .nav-list li {
+        margin-right: 10px;
+      }
+        }
+    </style>
+    <section class="main"></section>
+    <center>
+     <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="USWebsite.html" class="hi">
+              <img src="logo.png" class="logo" alt="Logo">
+            </a>
+          </li>
+          <li><a href="menu.html">Get A Website</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="tel:(417) 619-4914">Contact</a></li>
+          <li><a href="mailto: uswebsitesco@gmail.com">Eamil</a></li>
+        </ul>
+      </nav>
+    </center>
+      <div class="check-container">
+      <p class="check1"><span class="greencheck">&#10004;</span> All done for you</p>
+      <p class="check1"><span class="greencheck">&#10004;</span> No hidden costs</p>
+      <p class="check1"><span class="greencheck">&#10004;</span> It's more than a website</p>
+    </div>
+
+    <div class="container">
+    <section class="one">
+    <center><div class="slash-over onex">$599</div></center>
+        <h1 class="oneh">$199 one time </h1>
+        <p class="onep">In addition to the initial one-time payment of $199, there is a recurring monthly fee of $10. </p>
+        <p class="check"><span class="greencheck">&#10004;</span> Built-for-you website or online store</p>
+        <p class="check"><span class="greencheck">&#10004;</span>Domain for 2 years</p>
+        <p class="check"><span class="greencheck">&#10004;</span>Custom Domain</p>
+        <p class="check"><span class="greencheck">&#10004;</span>secure hosting</p>
+        <p class="check"><span class="greencheck">&#10004;</span> 30-day money back guarantee</p>
+        <p class="check"><span class="greencheck">&#10004;</span>1-on-1 editing</p>
+        <p class="check"><span class="greencheck">&#10004;</span> Ready in 10 days</p><br><br>
+        <center><a href="STRIPE_LINK" class="button1">Get Started</a></center>
+
+    </section>
+    <section class="one">
+        <center><div class="slash-over onex">$799</div></center>
+            <h1 class="oneh">$349 one time </h1>
+            <p class="onep">In addition to the initial one-time payment of $349, there is a recurring monthly fee of $8.49. </p>
+            <p class="check"><span class="greencheck">&#10004;</span> Built-for-you website or online store</p>
+            <p class="check"><span class="greencheck">&#10004;</span>Domain for 4 years</p>
+            <p class="check"><span class="greencheck">&#10004;</span>Custom Domain</p>
+            <p class="check"><span class="greencheck">&#10004;</span>secure hosting</p>
+            <p class="check"><span class="greencheck">&#10004;</span> 30-day money back guarantee</p>
+            <p class="check"><span class="greencheck">&#10004;</span>Tailored integrations designed to convert visitors into customers: including live chat, sophisticated design options, lead capture features, multimedia enhancements, and much more.</p>
+
+            <p class="check"><span class="greencheck">&#10004;</span> Ready in 10 days</p><br><br>
+            <center><a href="STRIPE_LINK" class="button1">Get Started</a></center>
+    
+        </section>
+        <section class="one">
+            <center><div class="b">Best Value</div></center>
+            <center><div class="slash-over onex">$899</div></center>
+                <h1 class="oneh">$599 one time </h1>
+                <p class="onep">In addition to the initial one-time payment of $599, there is a recurring monthly fee of $7.49. </p>
+                <p class="check"><span class="greencheck">&#10004;</span> Built-for-you website or online store</p>
+                <p class="check"><span class="greencheck">&#10004;</span>Domain for 2 years</p>
+                <p class="check"><span class="greencheck">&#10004;</span>Custom Domain</p>
+                <p class="check"><span class="greencheck">&#10004;</span>secure hosting</p>
+                <p class="check"><span class="greencheck">&#10004;</span>Sell Stuff online</p>
+                <p class="check"><span class="greencheck">&#10004;</span> 30-day money back guarantee</p>
+                <p class="check"><span class="greencheck">&#10004;</span>Tailored integrations designed to convert visitors into customers: including live chat, sophisticated design options, lead capture features, multimedia enhancements, and much more.</p>
+
+                <p class="check"><span class="greencheck">&#10004;</span> Ready in 10 days</p><br><br>
+                <center><a href="STRIPE_LINK" class="button1">Get Started</a></center>
+        
+            </section>
+            <section class="main2"></section>
+    </div>
+    <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide">
+        <span class="text">Pricing Page </span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">USWebsites </span>
+      </h1>
+      
+    </div>
+  </div>
+  <div class="slider"></div>
+  <script src="app.js"></script>
+
+  <script>
+   
+
+    const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+tl.to(".intro", { y: "-110%", duration: 1 }, "-=1");
+  </script>
+</body>
+</html>

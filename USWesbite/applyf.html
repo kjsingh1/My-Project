@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel = "stylesheet" type = "text/css" href ="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #A8D5BA;
+            color: white;
+            padding: 20px;
+        }
+
+        div {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #A8D5BA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #8BC4A0;
+        }
+
+        #status {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h2>Contact Us</h2>
+        <form id="contact-form" enctype="multipart/form-data">
+            <label for="user_name">Name:</label>
+            <input type="text" id="user_name" name="user_name" required>
+
+            <label for="user_email">Email:</label>
+            <input type="email" id="user_email" name="user_email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label for="attachment">Attach a document:</label>
+            <input type="file" id="attachment" name="attachment" >
+
+            <input type="submit" value="Send">
+        </form>
+        <div id="status"></div>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("rh0pbZ53FEeSb1lm0");
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_osjkaib', 'template_nafuhhi', this)
+                .then(function () {
+                    document.getElementById('status').innerHTML = "Message sent!";
+                    document.getElementById('contact-form').reset();
+                }, function (error) {
+                    document.getElementById('status').innerHTML = "Failed to send message: " + error.text;
+                });
+        });
+    </script>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="user_name">Name:</label>
+            <input type="text" id="user_name" name="user_name" required>
+
+            <label for="user_email">Email:</label>
+            <input type="email" id="user_email" name="user_email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label for="attachment">Attach a document:</label>
+            <input type="file" id="attachment" name="attachment">
+
+            <input type="submit" value="Send">
+        </form>
+        <div id="status"></div>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("rh0pbZ53FEeSb1lm0"); // Replace with your EmailJS user ID
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+
+            // Use the EmailJS sendForm method
+            emailjs.sendForm('service_osjkaib', 'template_nafuhhi', formData)
+                .then(function () {
+                    document.getElementById('status').innerHTML = "Message sent!";
+                    document.getElementById('contact-form').reset();
+                }, function (error) {
+                    document.getElementById('status').innerHTML = "Failed to send message: " + error.text;
+                });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USWebsite - Home</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <link rel = "stylesheet" type = "text/css" href ="styles.css">
+
+  <link 
+  href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+    rel="stylesheet"
+  />
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/64e0de5994cf5d49dc6b592d/1h87693ii';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+   
+
+    .slideshow-container {
+      position: relative;
+      width: 90%;
+      height: 600px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 100%;
+      transition: left 1s ease-in-out;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-one {
+      max-width: 100%;
+      height: auto;
+      opacity: 0;
+      animation: fadeIn 1s ease-out;
+      animation-fill-mode: forwards;
+      border-radius: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    nav {
+      background-color: lightblue;
+      color: lightblue;
+      padding: 10px;
+      height: 100px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: red;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    .title {
+      height: 1100px;
+      background-color: #85c3da;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title-head {
+      font-weight: 600;
+      color: rgb(255, 76, 76);
+      font-size: 60px;
+      margin: 5px;
+      text-align: center;
+      padding: 5px;
+    }
+
+    .title-ima {
+      width: 100%;
+      max-height: 550px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+
+    .button-1 {
+        color: white;
+      font-size: 25px;
+      font-weight: 300;
+      text-decoration: none;
+      padding: 15px 30px;
+      border: 2px solid rgb(255, 76, 76);
+      border-radius: 50px;
+      background-color: rgb(255, 76, 76);
+    }
+.button-2 {
+    color: wheat;
+      font-size: 25px;
+      font-weight: 300;
+      text-decoration: none;
+      padding: 15px 30px;
+      border: 2px solid green;
+      background-color:#006400;
+      border-radius: 50px;
+}
+    .title1 {
+      height: 1100px;
+      background-color: lightgoldenrodyellow;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title-head1 {
+      color: #006400;
+      font-size: 50px;
+      margin-top: 20.3px;
+      text-align: center;
+      opacity: 0;
+      transition: all 1s;
+       filter: blur(10px);
+       transform: translateX(100%);
+    }
+    .hidden {
+        opacity: 0;
+      transition: all 1s;
+       filter: blur(10px);
+       transform: translateX(100%);
+    }
+    .show {
+          opacity: 1;
+          filter:blur(0);
+          transform:translateX(0);
+        }
+
+    .title2 {
+      height: 300px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .head2 {
+      font-size: 40px;
+      color: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+
+    }
+
+    .head2-text {
+      font-size: 16px;
+      font-weight: 100;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .get-start {
+      color: black;
+      font-size: 25px;
+      font-weight: 300;
+      text-decoration: none;
+      padding: 15px 30px;
+      border: 2px solid black;
+      border-radius: 50px;
+    }
+    .intro {
+  background: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  background: lightblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.intro-text {
+  color: rgb(233, 233, 233);
+  font-family: "Heebo", sans-serif;
+  font-size: 2rem
+}
+
+.hide {
+  background: red;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+  color: lightblue;
+}
+.title3 {
+    height: 500px;
+    background-color: red;
+}
+.head3 {
+    font-size: 40px;
+      color: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: lightblue;
+}
+.head3-text {
+    font-size: 16px;
+      font-weight: 100;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: lightblue;
+}
+.button-4 {
+    color: lightblue;
+      font-size: 25px;
+      font-weight: 300;
+      text-decoration: none;
+      padding: 15px 30px;
+      border: 2px solid lightblue;
+      background-color: #0000;
+      border-radius: 50px;
+}
+.title4 {
+  background-color: white;
+  height: 900px;
+}
+.head4 {
+  text-align: center;
+  font-size: 40px;
+}
+.ima-4 {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 150px;
+}
+.ima-text4 {
+  margin-left: 200px;
+}
+.ima-text4p {
+  width: 400px;
+  margin-left: 200px;
+}
+.border {
+    border: 2px solid lightblue;
+    font-size: 80px;
+}
+.ima-5 {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.ima-container {
+  display: flex;
+  gap: 90px;
+}
+.ima-text5 {
+  margin-left: 700px;
+  margin-top: -150px;
+  width: 1000px;
+}
+.ima-text5p {
+  margin-left: 700px;
+  width: 400px;
+  margin-top: -5px;
+}
+.title5 {
+  height: 600px;
+  background-color: bisque;
+}
+.head5 {
+  font-size: 60px;
+  text-align: center;
+ padding: 30px;
+}
+.head-text5 {
+      max-width: 600px;
+      text-align: center;
+      margin-top: -60px;
+}
+.button-5 {
+      color: black;
+      font-size: 25px;
+      font-weight: 300;
+      text-decoration: none;
+      padding: 15px 30px;
+      border: 2px solid black;
+      background-color: #0000;
+      border-radius: 50px;
+      margin-bottom: 90px;
+}
+.vid {
+  height: 70%;
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 25px;
+}
+
+    @media screen and (min-width: 1224px) {
+      .title {
+        height: 1200px;
+      }
+
+      .title1 {
+        margin-top: -20.2px;
+      }
+
+      .title-ima {
+        height: 55%;
+        width: 70%;
+        margin-top: 30px;
+        border-radius: 20px;
+      }
+
+      .logo {
+        width: 200px;
+        height: 200px;
+      }
+
+      .title-head {
+        margin-top: -30px;
+      }
+
+      .nav-list li {
+        margin-right: 30px;
+      }
+
+      .title-head1 {
+        padding: 30px;
+      }
+
+      .slideshow-container {
+        width: 100%;
+        height: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+
+      .img-one {
+        width: 60%;
+        height: 90%;
+      }
+      .ima-5 {
+        margin-left: 200px;
+      }
+      .ima-text5 {
+        margin-left: 900px;
+      }
+      .ima-text5p {
+        margin-left: 900px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .slideshow-container {
+        width: 100%;
+        height: 300px; /* Adjust the height as needed for the phone screen */
+      }
+
+      .slide {
+        left: 0; /* Ensure slides are shown properly on phones */
+      }
+
+      .img-one {
+        width: 100%;
+        height: auto; /* Adjust the image size for phones */
+      }
+
+      .title-head,
+      .title-head1,
+      .head2,
+      .intro-text {
+        font-size: 30px; /* Adjust the font sizes for better readability on phones */
+      }
+
+      .nav-list li {
+        margin-right: 10px; /* Reduce the margin for the navigation items */
+      }
+
+      .logo {
+        width: 80px; /* Adjust the logo size for phones */
+        height: 80px;
+      }
+
+      .button-1,
+      .button-2,
+      .get-start {
+        font-size: 18px; /* Adjust the button font size for phones */
+        padding: 10px 20px; /* Adjust the button padding for phones */
+      }
+      .intro-text {
+        font-size: 16px; /* Adjust the intro-text font size for phones */
+        padding: 10px; /* Adjust the intro-text padding for phones */
+        text-align: center; /* Center the text horizontally */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        justify-content: center;
+        align-items: center; /* Center the text vertically */
+        overflow: auto; /* Add scrollbars when content exceeds the available space */
+        max-height: 100%; /* Ensure .intro-text does not exceed the .intro height */
+        margin-left: 39px;
+      }
+      .intro {
+        height: 100%; /* Adjust the height of .intro for smaller phones */
+        width: 100%;
+        position: fixed;
+
+      }
+      .intro-text-wrapper {
+        overflow: auto; /* Add scrollbars when content exceeds the available space */
+        height: 100%; /* Ensure the wrapper takes the full height of .intro */
+      }
+      .title4 {
+        display: block;
+        height: 1100px;
+      }
+      .ima-container {
+        display: block;
+        
+      }
+      .ima-4 {
+        height: 300px;
+        width: 300px;
+      }
+      .ima-5 {
+        height: 300px;
+        width: 300px;
+      }
+      .hcontainer {
+        display: block;
+        text-align: center;
+        gap: 30px;
+      }
+
+      .ima-text4 {
+        text-align: center;
+        margin-top: -450px;
+        margin-left: 55px;
+      }
+      .ima-text4p {
+        margin-left: 0px;
+      }
+      .ima-4 {
+        margin-left: 35px;
+      }
+      .ima-text5 {
+        margin-left: 90px;
+        margin-top: 300px;
+      }
+      .ima-text5p {
+        margin-left: 35px;
+      }
+      .ima-5 {
+        margin-top: 100px;
+      }
+      .head5 {
+        font-size: 30px;
+      }
+      
+
+  }
+    
+  </style>
+</head>
+
+<body>
+
+  <section class="title">
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="hi">
+            <img src="logo.png" class="logo" alt="Logo">
+          </a>
+        </li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="career.html">About Us</a></li>
+
+        <li><a href="tel:(417) 619-4914">Contact</a></li>
+        <li><a href="mailto: uswebsitesco@gmail.com">Eamil</a></li>
+      </ul>
+    </nav>
+    <h1 class="title-head hidden">Grow Your Business <br>with USWebsite</h1><br><br><br>
+    <a href="pricing.html" class="button-1">Get a Website Now</a><br><br><br>
+    <video class="vid" src="bigapple.mp4" controls loop></video>
+    <div class="curve"></div>
+  </section>
+
+  <section class="title1">
+    <h1 class="title-head1 hidden">A Website That Sets You <br>Up For Success</h1>
+    <a href="pricing.html" class="button-2">Get a Website Now</a><br><br>
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img class="img-one" src="number1.jpg" class="hidden" alt="Photo 1">
+      </div>
+      <div class="slide fade">
+        <img class="img-one" src="number2.jpg" class="hidden" alt="Photo 2">
+      </div>
+      <div class="slide fade">
+        <img class="img-one" src="number3.jpg" class="hidden" alt="Photo 3">
+      </div>
+      <div class="slide fade">
+        <img class="img-one" src="number4.jpg" class="hidden" alt="Photo 4">
+      </div>
+      <div class="slide fade">
+        <img class="img-one" src="number5.jpg" class="hidden" alt="Photo 5">
+      </div>
+    </div>
+  </section>
+
+  <section class="title2">
+    <h1 class="head2 hidden">Have More Than <br>a Website</h1>
+    <p class="head2-text">Have a website that grows with you &ndash; from selling online and starting a blog to promoting your
+      business and organizing events, create a versatile online presence.</p>
+    <a href="pricing.html" class="get-start">Get a Website Now</a>
+  </section><br><br><br>
+
+    <section class="title3">
+    <h1 class="head3 hidden">Have a Website in <br><span class="border">10 days!</span></h1>
+    <center><p class="head3-text">Embark on the journey to owning your exclusive, tailor-made website in just 10 days. Feel free to initiate the process by either sending us a detailed email, meticulously outlining your specific requirements and desired features, or engaging in a personalized one-on-one chat session with our expert team. </p></center><br>
+    <center><a href="pricing.html" class="button-4">Get a Website Now</a></center>
+  </section>
+  <section class="title4">
+    <h1 class="head4 hidden">Take Your Business where <br>it needs to go</h1>
+    <center>
+    <div class="ima-container">
+    <img src="coffee.png" alt="" class="ima-4">
+    <img src="resort.png" alt="" class="ima-5">
+    </div>
+    </center>
+    <div class="hcontainer">
+    <h2 class="ima-text4">eCommerce</h2>
+    <p class="ima-text4p">Unlock the potential of your business with robust eCommerce solutions that enable you to sell online and efficiently manage your operations.</p>
+  </div>
+    <h2 class="ima-text5">Scheduling software</h2>
+    <p class="ima-text5p">Present your expertise and ensure a smooth and hassle-free booking process for your clientele.</p>
+   
+  </section>
+  <section class="title5">
+    <h1 class="head5 hidden">How Do I Get A <br>Website?</h1>
+    <center><p class="head-text5">Getting a website from us is REALLY EASY &dash; simply EMAIL US the things you want on the website! Our dedicated team of experts is eagerly awaiting your requirements and is excited to bring your vision to life. Rest assured that your project will receive our full attention, creativity, and technical expertise, resulting in a website that not only meets but exceeds your expectations. Take the first step today and unlock the digital potential of your business with our seamless website creation process!</p></center><br><br>
+    <center><a href="pricing.html" class="button-5">Get a Website</a></center>
+  </section>
+
+
+  <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide">
+        <span class="text">Gradually Making </span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">Businesses Expand </span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">Everyday</span>
+      </h1>
+    </div>
+  </div>
+  <div class="slider"></div>
+
+  <script>
+    function isElementInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+      slides[currentSlide].style.left = '100%'; // Move the current slide out
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].style.left = '0'; // Move the next slide in
+    }
+
+    showSlide(0);
+
+    setInterval(() => showSlide(currentSlide + 1), 3000);
+
+    const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log (entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      }else {
+        entry.target.classList.remove('show');
+      }
+  });
+});
+
+
+  </script>
+
+ <script src="./app.js"></script>
+
+</body>
+
+</html>
