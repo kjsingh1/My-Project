@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+  <a href="index.html" class="nav">Home</a>
+  <a href="#" class="nav">Tiktok</a>
+  <a href="#" class="nav">Github</a>
+
+<h3>Karamjot Singh</h3>
+
+
+    <div class="container">
+        <h2 class="name">Hi im Karamjot <br>Singh 👋🏼</h2>
+        <p class="desc">I Am a Frontend developer. I code HTML, CSS, Javascript, and Python</p>
+        <img src="IMG_0160.jpeg" alt="" class="imagew">
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <div class="container2">
+    <h2 class="projects">My Projects</h2>
+  <div class="project2">
+  <div class="container3">
+    <div class="republic">      
+      <video src="store.mp4" class="videow"></video>
+      <p class="store">My Dads <a href="https://www.nextstoprepublic.com">Website</a></p>
+      <p class="sdesc">My Dad owns a Gas Station named Nextstop</p>
+
+    </div>
+    <div class="Bigapple">
+      <video src="Bigapple.mp4" class="video"></video>
+    <p class="store2">My Uncles Website</p>
+    <p class="sdesc2">My Uncle Owns a Gas Station named Big Apple</p>
+  </div>
+  <div class="Uswebsite">
+    <video src="Uswebsite.mp4" class="vide"></video>
+    <p class="store3">My Website</p>
+    <p class="sdesc3">I am 13 years old and trying to make a business</p>
+  </div>
+</div>
+  </div>
+
+  </div>
+  <div class=""></div>
+  <script>
+    /* Video one*/
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('.videow');
+
+        video.addEventListener('mouseover', function() {
+            if (video.paused) {
+                video.play();
+            }
+        });
+
+        video.addEventListener('mouseout', function() {
+            video.pause();
+        });
+    });
+    /* Video Two*/
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('.video');
+
+        video.addEventListener('mouseover', function() {
+            if (video.paused) {
+                video.play();
+            }
+        });
+
+        video.addEventListener('mouseout', function() {
+            video.pause();
+        });
+    });
+    /* Video 3*/
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('.vide');
+
+        video.addEventListener('mouseover', function() {
+            if (video.paused) {
+                video.play();
+            }
+        });
+
+        video.addEventListener('mouseout', function() {
+            video.pause();
+        });
+    });
+</script>
+</body>
+</html>

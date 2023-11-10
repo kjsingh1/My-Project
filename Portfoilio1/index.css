@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 255px;
+  margin-left: -200px;
+}
+.desc {
+    margin-top: 300px;
+    margin-left: -390px;
+    width: 400px;
+}
+
+.name {
+  font-size: 50px;
+  margin-left: 250px;
+}
+
+.imagew {
+  width: 400px;
+  height: 500px;
+  margin-top: -90px;
+  margin-left: 300px;
+  border-radius: 500px;
+  transition: transform 0.5s ease;
+}
+.imagew:hover {
+    transform: scale(1.1);
+    animation: fadeIn 1s ease-out;
+    animation-fill-mode: backwards;
+}
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.9;
+    }
+}
+
+.projects {
+    font-size: 50px
+}
+
+.videow {
+    width: 500px;
+    margin-left: 900px;
+    border-radius: 30px;
+    margin-top: 
+    90px;
+}
+
+.nav {
+    text-decoration: underline;
+    margin-left: 950px;
+    margin-right: -850px;
+    margin-top: -300px;
+    color: black;
+}
+h3 {
+  margin-left: 3px;
+}
+
+.container3 {
+    display: flex;
+    gap: 200px;
+    margin-left: 0px;
+}
+
+.republic {
+    width: 400px;
+    height: 600px;
+    margin-left: 00px auto;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.republic video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 00px;
+    margin-top: 150px;
+}
+
+.republic .store a {
+    color: black;
+    text-decoration: underline;
+}
+.republic .store {
+    font-size: 30px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+.republic .sdesc {
+    margin: 10px 0;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.Bigapple {
+    width: 400px;
+    height: 600px;
+    margin-left: 0px auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.Bigapple .video {
+    width: 100%;
+    border-radius: 30px;
+    margin-left: 0px;
+    margin-top: 90px;
+}
+.Bigapple .store2 {
+    margin-left: 0px;
+    font-size: 30px;
+}
+.Bigapple .sdesc2 {
+    margin-left: 0px
+}
+.Uswebsite {
+    width: 400px;
+    height: 600px;
+    margin-left: 0px auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.Uswebsite .vide {
+    width: 300px;
+    border-radius: 30px;
+    margin-left: 0px;
+    margin-top: 150px;
+}
+.Uswebsite .store3 {
+    margin-top:20px;
+    font-size: 30px;
+}
+
+
+
+@media screen and (max-width: 600px) and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    .name {
+        font-size: 25px;
+        margin-left: 250px;
+        writing-mode: horizontal-tb;
+        white-space: nowrap;
+    }
+    .imagew {
+        width: 300px;
+        height: 400px;
+        margin-left: 200px;
+    }
+    .desc {
+        margin-left: -200px;
+    }
+    .store {
+        margin-left: 30px;
+    }
+    .sdesc {
+        margin-left: 30px;
+    }
+    .videow {
+        margin-left: 350px;
+    }
+    .video {
+        margin-left: 30px;
+        margin-bottom: -55px;
+    }
+    .store2 {
+        margin-left: 550px;
+    }
+    .sdesc2 {
+        margin-left: 550px;
+    }
+    .vide {
+        margin-left: 350px;
+    }
+    .store3 {
+        margin-left: 30px;
+    }
+    .sdesc3 {
+        margin-left: 30px;
+    }
+    .nav {
+        margin-left: 400px;
+        margin-right: -350px;
+    }
+
+    h3 {
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .nav {
+        margin-left: 160px;
+        margin-right: -150px;
+    }
+    .imagew {
+        width: 200px;
+        height: 250px;
+        margin-top: 200px;
+        margin-left: -150px;
+    }
+    .name {
+        font-size:30px;
+        text-align: center;
+        margin-left: 180px;
+    }
+    .desc {
+        width: 50px;
+        margin-left: -100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+      }
+    .container3 {
+        display: block;
+        margin-top: 30px;
+    }
+    .republic {
+        width: 72%;
+    }
+    .Bigapple {
+        width: 72%;
+    }
+    .Uswebsite {
+        width: 72%;
+    }
+    .Bigapple .store2 {
+        margin-top: 90px;
+    }
+    .Uswebsite .vide {
+        margin-left: -20px;
+    }
+      
+      
+    
+}
+
+@media screen and (min-width: 1025px) {
+    .store {
+        margin-left: 450px;
+    }
+    .sdesc {
+        margin-left: 450px;
+    }
+    .store2 {
+        margin-left: 900px;
+    }
+    .sdesc2 {
+        margin-left: 900px;
+    }
+    .videow {
+        margin-left: 750px;
+    }
+    .video {
+        margin-left: 370px;
+    }
+    .nav {
+        margin-left: 900px;
+        margin-right: -850px;
+    }
+    
+}
