@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+      animation: fadeIn 1s ease-out;
+      animation-fill-mode: forwards;
+     }
+     @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+     }
+    .main1 {
+    background-color: red;
+    height: 100px;
+  }
+  .title {
+    margin-top: -85px;
+    text-align: center;
+    color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+    .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+  }
+  .logo:hover {
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 1);
+ 
+  }
+  button {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+    nav {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+    
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    
+  }
+  .nav-list li {
+    flex-grow: 1;
+  }
+    .about{
+      font-weight: 500;
+      margin-left: 50px;
+      font-size: 50px;
+    }
+    .main {
+      max-width: 100%;
+    margin: 20px auto;
+    background-color: rgb(241, 241, 241); /* A lighter gray */
+
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .people{
+      font-weight: 100;
+      font-size: 35px;
+      width: 800px;
+      margin-left: 50px;
+    }
+    .peoplep{
+      color: gray;
+      width: 500px;
+      margin-left: 50px;
+    }
+    .show {
+  display: block;
+}
+.menu-icon {
+  display: block;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .item {
+    display: block;
+  }
+  .about{
+    font-size: 34px;
+  }
+  .people {
+    font-size: 20px;
+    margin-left: 1px;
+  }
+  .peoplep {
+    font-size: 14px;
+    margin-left: 4px;
+    width: 350px;
+  }
+
+  /* Additional styles for smaller screens go here */
+}
+
+@media only screen and (min-width: 769px) {
+  .menu-icon {
+    display: none;
+    display: -webkit-box;
+  }
+
+  .nav-list {
+    display: block;
+  }
+
+  /* Additional styles for larger screens go here */
+}
+
+  </style>
+    <header class="main1">
+      <button><a href="bighome.html"><img class="logo" src="https://static.wixstatic.com/media/9c675c_61912e3743a140b788272a2a3d8e95b4~mv2.png/v1/fill/w_192,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Apple-Logo.png" /></a></button>
+      <h1 class="title">Big Apple <br />Travel Center</h1>
+    </header>
+    <nav>
+      <div class="menu-icon">&#9776;</div>
+      <ul class="nav-list">
+        <li><a href="bighome.html" class="item"><b>Home</b></a></li>
+        <li><a href="bigmenu.html" class="item"><b>Menu</b></a></li>
+        
+        <li><a href="about.html" class="item"><b>About Us</b></a></li>
+       <li><a href="http://www.registercard.us/card-program.asp">Rewards</a></li>
+      </ul>
+    </nav>
+  <h1 class="about">About Bigapple Travel Center</h1>
+  <section class="main">
+    
+    <h2 class="people">Making people Happy with Low prices</h2>
+    <p class="peoplep">
+      Established in 2021, the Bigapple Travel Center has quickly risen to become the premier travel destination in four states, a testament to our commitment to quality and affordability. We pride ourselves on offering the lowest prices in the industry, earning the trust of our valued customers and outshining the competition. Our store is akin to a small Walmart, where you can explore a diverse array of top-quality products, ensuring your every need is met with convenience and value. As we continue to expand and serve our customers with unwavering dedication, the Bigapple Travel Center promises an enduring legacy of excellence.</p>
+
+     <h2 class="people">OUR HISTORY</h2>
+    <p class="peoplep">
+      We envision creating a substantial gas station and truck stop, consisting of 8 individual gas stations merged into one large and comprehensive facility. Our motivation for this project is to provide invaluable support to truckers by offering them access to top-notch amenities, including affordable and high-quality shower facilities, as well as a wide range of delicious food and beverages. Our primary goal is to enhance the overall experience for truckers on the road, making their journeys more comfortable, convenient, and enjoyable.
+    </p>
+    <h2 class="people">OUR JOURNEY</h2>
+    <p class="peoplep">As times changed, so did Bigapple. Embracing innovation, we evolved our offerings like our <a href= "https://www.bigappletravelcenters.com/first-fifty" class="first"><button class="firstfifty"><u>First Fifty</u></button></a> or our <a href="https://www.bigappletravelcenters.com/rewards"></a><button class="firstfifty"><u>Rewards Program.</u></button>Our stores grew not olny in number but also in diversity, offering a wide range of products beyond tranditional convenience store fare. From freshly made food and ice cream daily, we've made this truckstop so affordable that for a shower it is 10 dollars per 10 minutes  </p>
+    <h2 class="people">TODAY</h2>
+    <p class="peoplep">Today, Bigapple proudly stands as a beacon of convenience in the bustling urban landscape, offering a commitment to the highest standards of excellence in every aspect of your dining experience. From the moment you walk through our doors, the enticing aroma of freshly prepared dishes fills the air, a testament to our unwavering dedication to crafting every meal with the finest, locally sourced ingredients. Whether it's our refreshing beverages, satisfying snacks, or our renowned, freshly churned ice cream, each element of our menu reflects the passion and care that defines Bigapple. Our unwavering commitment to excellent service remains as strong as ever, ensuring that your visit is not just convenient but a truly delightful and memorable culinary journey.</p>
+
+  </section>
+
+  <script>
+/* menu */  
+const menuIcon = document.querySelector('.menu-icon');
+const navList = document.querySelector('.nav-list');
+
+menuIcon.addEventListener('click', () => {
+  navList.classList.toggle('show');
+});
+
+
+  </script>
+</body>
+</html>

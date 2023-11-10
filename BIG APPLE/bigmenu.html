@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter:400|Roboto:400" nonce="">
+
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        animation: fadeIn 1s ease-out;
+    } 
+
+    header {
+        background-color: red;
+        height: 100px;
+    }
+
+    .title {
+        margin-top: -85px; 
+        text-align: center;
+        color: darkgray;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    button {
+        background-color: transparent;
+        border-color: transparent;
+        cursor: pointer;
+    }
+   
+    .food-title {
+        margin-left: 300px;
+        color: red;
+        font-family: "Architects Daughter", sans-serif;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: red solid 2px;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .food {
+        margin-left: 60px;
+        width: 10%;
+      
+    }
+    @media (max-width: 480px) {
+  .food-title {
+    margin-left: 11px;
+    font-size: 18px;
+  }
+
+  .food {
+    width: 20%;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+
+    .nav-list {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+    .item {
+      display: block;
+    }
+  }
+@media only screen and (min-width: 769px) {
+    .menu-icon {
+      display: none;
+      display: block;
+    }
+
+    .nav-list {
+      display: block;
+    }
+  }
+  nav {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+    
+  }
+  
+  nav ul li a {
+    color: red;
+    text-decoration: none;
+    padding: 5px;
+    
+  }
+  .nav-list li {
+    flex-grow: 1;
+  }
+</style>
+<body>
+    <header>
+        <button><a href="bighome.html"><img class="logo" src="https://static.wixstatic.com/media/9c675c_61912e3743a140b788272a2a3d8e95b4~mv2.png/v1/fill/w_192,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Apple-Logo.png" /></a></button>
+        <h1 class="title">Menu</h1>
+    </header>
+    <nav>
+        <div class="menu-icon">&#9776;</div>
+        <ul class="nav-list">
+          <li><a href="bighome.html" class="item"><b>Home</b></a></li>
+          <li><a href="about.html" class="item"><b>About</b></a></li>
+
+        </ul>
+      </nav>
+    <div class="food-titles">
+        <h1 class="food-title">Appetizers</h1>
+       
+    </div>
+    <div class="container">
+        <p class="food">Samosas</p>
+        <p class="food">Pakora</p>
+        <p class="food">Chatt</p>
+        <p class="food">Vada</p>
+        <p class="food">Kebob</p>
+        <p class="food">Dosa</p>
+        <p class="food">Idli</p>
+        <p class="food">Bhaji</p>
+        <p class="food">Paneer</p>
+        <p class="food">Papad</p>
+        <p class="food">Kechori</p>
+        <p class="food">Tandoori</p>
+        <p class="food">Bhajiya</p>
+        <p class="food">Chai</p>
+        <p class="food">Lassi</p>
+        <p class="food">Nimbu pani</p>
+        <p class="food">Masala Chai</p>
+        <p class="food">Jalebi</p>
+        <p class="food">Kheer Rice Pudding</p>
+        <p class="food">Gajrela</p>
+        <p class="food">Mango Lassi</p>
+    </div>
+    <h1 class="food-title">Bread</h1>
+    <div class="container">
+        <p class="food">Naan Bread</p>
+        <p class="food">Garlic Naan</p>
+        <p class="food">Tandoori Roti</p>
+        <p class="food">Paneer Naan</p>
+        <p class="food">Chilli Naan</p>
+        <p class="food">Tawa Roti</p>
+        <p class="food">Aloo Naan</p>
+        <p class="food">Gobi Naan</p>
+        <p class="food">Cheese Naan</p>
+        <p class="food">Onion Naan</p>
+        <p class="food">Butter Naan</p>
+        <p class="food">Plain Naan</p>
+    </div>
+    <h1 class="food-title">Meats</h1>
+    <div class="container">
+        <p class="food">Chicken Tikka Masala&#40;Creamy&#41;</p>
+        <p class="food">Butter Chicken&#40;Creamy&#41;</p>
+        <p class="food">Mango Chicken&#40;Creamy&#41;</p>
+        <p class="food">Tandoori Chicken&#40;Dry&#41;</p>
+        <p class="food">Chicken Seekh Kabob&#40;Dry&#41;</p>
+        <p class="food">Chicken Biryani&#40;Dry&#41;</p>
+        <p class="food">Mango Lamb&#40;Creamy&#41;</p>
+        <p class="food">Lamb Tikka Masala&#40;Creamy&#41;</p>
+        <p class="food">Lamb Kabob&#40;Dry&#41;</p>
+        <p class="food">Lamb Biryani&#40;Dry&#41;</p>
+        <p class="food">Goat Curry&#40;Creamy&#41;</p>
+        <p class="food">Goat Biryani&#40;Dry&#41;</p>
+        <p class="food">Fish Curry&#40;Creamy&#41;</p>
+        <p class="food">Fish Tikka&#40;Creamy&#41;</p>
+        <p class="food">Tandoori Fish&#40;Dry&#41;</p>
+
+
+    </div>
+    <h1 class="food-title">Vegetarian</h1>
+    <div class="container">
+        <p class="food">Paneer Tikka&#40;Creamy&#41;</p>
+        <p class="food">Malai Kofta&#40;Creamy&#41;</p>
+        <p class="food">Saag Paneer&#40;Creamy&#41;</p>
+        <p class="food">Veg Biryani &#40;Dry&#41;</p>
+        <p class="food">Daal Makhni</p>
+        <p class="food">Saag Paneer</p>
+        <p class="food">Yellow Daal</p>
+        <p class="food">Aloo Gobi</p>
+        <p class="food">Aloo Mattar</p>
+        <p class="food">Channa Masala</p>
+        <p class="food">Panneer Channa</p>
+        <p class="food">Bhindi</p>
+        <p class="food">Mix veg Korma</p>
+        <p class="food">Panneer Bhurji</p>
+        <p class="food">Aloo Gajar Mattar</p>
+        <p class="food">Mattar Panneer</p>
+
+    </div>
+    <h1 class="food-title">Desserts</h1>
+    <div class="container">
+      <p class="food">Gulab Jamun</p>
+      <p class="food">Ras Malai</p>
+      <p class="food">Kheer</p>
+      <p class="food">Jalabi</p>
+      <p class="food">Laddoo</p>
+      <p class="food">Halwa</p>
+      <p class="food">Pinni</p>
+      <p class="food">Gur</p>
+      <p class="food">Gajrela</p>
+      <p class="food">Barfi</p>
+      <p class="food">Mitha Chawal</p>
+
+    </div>
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+       const navList = document.querySelector('.nav-list');
+   
+       menuIcon.addEventListener('click', () => {
+         navList.classList.toggle('show');
+       });
+     </script>
+    
+       
+</body>
+</html>
+   

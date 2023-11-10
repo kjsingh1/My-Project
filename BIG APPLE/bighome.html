@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter:400|Roboto:400" nonce="">
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-out;
+  } 
+  .fuel {
+    background-color: red;
+    height: 100px;
+
+  }
+  .main {
+    background-color: red;
+    height: 100px;
+  }
+  .contact {
+    position: relative;
+    height: 500px;
+    background-color: red;
+  padding: 50px;
+  }
+  .contact-image {
+    width: 600px;
+
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+  }
+  .logo:hover {
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 1);
+ 
+  }
+  button {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  .title {
+    margin-top: -85px;
+    text-align: center;
+    color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 100%; 
+    transition: left 1s ease-in-out;
+  }
+  .img-one {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeIn 1s ease-out;
+    animation-fill-mode: forwards;
+  }
+  .hidden {
+    opacity: 0;
+    transition: opacity 0.5s;
+    width: 100%;
+    height: auto;
+    display: inherit;
+  }
+  .fadeIn {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  nav {
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+    
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    
+  }
+  .nav-list li {
+    flex-grow: 1;
+  }
+  .item {
+    color: red;
+    font-size: large;
+  }
+  .item:hover {
+    background-color: grey;
+  }
+  .second {
+    text-align: center;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  table {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  .fuel {
+    width: 100%;
+    height: 50px;
+  }
+  .nav-list {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+  .twenty-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  background: gray;
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, .1);
+  min-height: 50px;
+  width: 50%;
+  min-width: 280px;
+  margin: 0 auto 1.25em;
+  box-sizing: border-box;
+  color: red;
+  font-weight: bold;
+}
+.review-container {
+  display: flex;
+}
+.reviewtext-1 {
+margin-left: 50px;
+border: red solid 2px;
+border-radius: 10px;
+}
+
+.review-1 {
+  margin-left:  100px;
+  font-family: "Architects Daughter",sans-serif;
+  color: red;
+}
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin: 20px;
+  padding: 20px;
+  background-color: red;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: darkgray;
+}
+
+.testimonial-image {
+  flex: 0 0 100px;
+  margin-right: 20px;
+
+}
+.phone {
+  border: 1px solid gray;
+  font-size: 23px;
+  margin-top: 30px;
+  color: lightgrey;
+  font-weight: 600
+  
+}
+.contact-p {
+  font-size: 30px;
+  font-weight: bold;
+  border: 4px solid gray;
+ padding: 110px;
+ width: 23%;
+  height: 20%;
+  color: lightgray;
+}
+.slider {
+  background: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+.intro {
+  background: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-text {
+  color: rgb(233, 233, 233);
+  font-family: "Heebo", sans-serif;
+  font-size: 2rem;
+}
+
+.hide {
+  background: red;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+  @media only screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+
+    .nav-list {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+    .item {
+      display: block;
+    }
+    .contact-image {
+      width: 340px;
+      padding: 10px;
+      margin-top: 270px;
+    }
+    .contact-p {
+      font-size: 20px;
+      padding: 10px;
+      margin-top: -40px;
+      width: 320px;
+      height: 40%;
+      margin-left: -35px;
+    }
+    .phone {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    .menu-icon {
+      display: none;
+      display:-webkit-box;
+    }
+
+
+    .nav-list {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+  .twenty {
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+  .reviewtext-1 {
+    margin-left: 200px;
+    width: 150px;
+    height: 100px;
+  }
+  .review-1 {
+    margin-left: 260px;
+    
+  }
+  .review1-container {
+    display: flex;
+    
+
+  }
+  
+}
+
+
+@media screen and (max-width: 767px) {
+  .twenty {
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+  .reviewtext-1 {
+    width: 200px;
+    
+  }
+  .review-container {
+    display: block;
+  margin-left: 30px;
+  }
+  .review-1 {
+    margin-left: 20px;
+   
+    width: 50%;
+  }
+  .review1-container {
+    display: flex;
+  }
+
+
+}
+@media only screen and (max-width: 767px) {
+  .testimonial-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .testimonial {
+    width: 80%;
+  }
+
+  .testimonial-image {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contact-image {
+    width: 50%;
+    height: 80%;
+    left: 45%;
+    top: 12%;
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header class="main">
+    <button><a href="bighome.html"><img class="logo" src="https://static.wixstatic.com/media/9c675c_61912e3743a140b788272a2a3d8e95b4~mv2.png/v1/fill/w_192,h_192,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Apple-Logo.png" /></a></button>
+    <h1 class="title">Big Apple <br />Travel Center</h1>
+  </header>
+  <nav>
+    <div class="menu-icon">&#9776;</div>
+    <ul class="nav-list">
+      <li><a href="bighome.html" class="item"><b>Home</b></a></li>
+      <li><a href="bigmenu.html" class="item"><b>Menu</b></a></li>
+      
+      <li><a href="about.html" class="item"><b>About Us</b></a></li>
+     <li><a href="http://www.registercard.us/card-program.asp">Rewards</a></li>
+    </ul>
+  </nav>
+
+  <div class="slideshow-container">
+    <div class="slide">
+      <img class="img-one" src="https://static.wixstatic.com/media/9c675c_55321aee18154681918cd9269800fb72~mv2.jpg/v1/fill/w_2472,h_666,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9c675c_55321aee18154681918cd9269800fb72~mv2.jpg" alt="Photo 1">
+    </div>
+    <div class="slide">
+      <img class="img-one" src="https://static.wixstatic.com/media/9c675c_4ff9975971864d16ab79aafd135023dd~mv2.jpg/v1/fill/w_2472,h_666,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9c675c_4ff9975971864d16ab79aafd135023dd~mv2.jpg" alt="Photo 2">
+    </div>
+    <div class="slide">
+      <img class="img-one" src="https://static.wixstatic.com/media/9c675c_3a5ffcd1a4624135b8fbab40b2002e23~mv2.jpg/v1/fill/w_2472,h_666,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9c675c_3a5ffcd1a4624135b8fbab40b2002e23~mv2.jpg" alt="Photo 3">
+    </div>
+  </div>
+  <h1 class="second">First Best TruckStop <br />in Four States</h1><br><br><br><br>
+  <header class="fuel">
+    <h1 class="title">Fuel Prices</h1>
+  </header>
+  <table>
+    <tr>
+      <th>Fuel Type</th>
+      <th>Price per Gallon</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td class="fuel-type">Regular Unleaded</td>
+      <td>$3.05</td>
+      <td class="description">Standard gasoline for most vehicles.</td>
+    </tr>
+    <tr>
+      <td class="fuel-type">Diesel</td>
+      <td>$3.50</td>
+      <td class="description">Fuel for diesel-powered vehicles.</td>
+    </tr>
+  </table><br><br><br><br>
+  <header class="fuel">
+    <h1 class="title">Amentites</h1>
+  </header>
+  
+  <div class="twenty">
+    <div class="twenty-four">24/7 Service</div>
+    <div class="twenty-four">Best Quality Gas</div>
+    <div class="twenty-four">Wide Selection of Products</div>
+    <div class="twenty-four">Indian food</div>
+    <div class="twenty-four">American food</div>
+    <div class="twenty-four">Dining</div>
+    <div class="twenty-four">Full Bathrooms</div>
+    <div class="twenty-four">Competitive Prices</div>
+    <div class="twenty-four">Quality Products</div>
+  </div><br><br><br><br>
+  <header class="fuel">
+    <h1 class="title">Testimonial</h1>
+  </header>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <div class="testimonial-image">
+      </div>
+      <div class="testimonial-content">
+        <h2>Rajinder R</h2>
+        <p>An enchanting haven of perfection and culinary delights, with an immaculate dining area, a Walmart-worthy store, and an exhilarating game room</p>
+      </div>
+    </div>
+  
+    <div class="testimonial">
+      <div class="testimonial-image">
+      </div>
+      <div class="testimonial-content">
+        <h2>Karamjot S</h2>
+        <p>Outstanding, clean, and unforgettable. Exceptional ambiance, diverse culinary delights, immaculate dining, Walmart-like store, and an amazing game room.</p>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br>
+  <header class="fuel">
+<h1 class="title">Contact Us</h1>
+  </header><br><br><br>
+  <header class="contact">
+    <tabel>
+      <tr>
+        <td>
+  <p class="contact-p">        Contact Us <br>
+     <a href="mailto:info@bigappletravelcenters.com"><button class="phone">info@bigappletravelcenters.com</button></a><br>
+     <a href="tel:+14177683030" class="phone"><button class="phone">+14177683030</button></a></p>
+         
+        </td>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.5964810825826!2d-94.40853902439612!3d37.06709807217229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c87d05763580cb%3A0xe5fd52d3883de0ee!2sBig%20Apple%20Travel%20Center!5e0!3m2!1sen!2sus!4v1688669216667!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact-image"></iframe>
+      </tr>
+      </tabel>
+  </header>
+  
+  <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide">
+        <span class="text">Big Apple</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">Travel Center</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">Best Truckstop</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">In 4 states</span>
+      </h1>
+    </div>
+  </div>
+  <div class="slider"></div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+      slides[currentSlide].style.left = '100%'; 
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].style.left = '0'; 
+    }
+
+    showSlide(0);
+
+    setInterval(() => showSlide(currentSlide + 1), 3000);
+
+    const menuIcon = document.querySelector('.menu-icon');
+    const navList = document.querySelector('.nav-list');
+
+    menuIcon.addEventListener('click', () => {
+      navList.classList.toggle('show');
+    });
+
+    const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+    
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 1 });
+tl.to(".intro", { y: "-110%", duration: 1 }, "-=1");
+    
+  </script>
+</body>
+</html>
